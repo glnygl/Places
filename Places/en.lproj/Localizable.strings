@@ -16,3 +16,7 @@
 "custom" = "Custom";
 "goToWiki" = "Go To Wiki";
 
+// MARK: - Error
+"error" = "Error";
+"checkLocation" = "Check Location Values"; 
+

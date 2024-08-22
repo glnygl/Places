@@ -15,3 +15,7 @@
 // MARK: - Button Title
 "custom" = "Özel";
 "goToWiki" = "Wiki'ye Git";
+
+// MARK: - Error
+"error" = "Hata";
+"checkLocation" = "Lokasyon Değerlerini Kontrol Edin";

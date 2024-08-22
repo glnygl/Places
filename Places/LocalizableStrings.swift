@@ -22,6 +22,11 @@ struct LocalizableStrings {
         static var goToWiki: String { "goToWiki".localize() }
     }
     
+    struct Error {
+        static var error: String { "error".localize() }
+        static var checkLocation: String { "checkLocation".localize() }
+    }
+    
 }
 
 
