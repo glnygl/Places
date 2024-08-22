@@ -19,3 +19,7 @@
 // MARK: - Error
 "error" = "Hata";
 "checkLocation" = "Lokasyon Değerlerini Kontrol Edin";
+
+// MARK: - Accessibility
+"click" = "Tıkla";
+"type" = "Değer Girin";

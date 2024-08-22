@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		296A97522C77C8AF002744A4 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A97512C77C8AF002744A4 /* ViewModifiers.swift */; };
+		296A97542C77C93A002744A4 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A97532C77C93A002744A4 /* ViewExtensions.swift */; };
 		29A3129A2C751D4F00BE0918 /* PlacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312992C751D4F00BE0918 /* PlacesApp.swift */; };
 		29A3129E2C751D4F00BE0918 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3129D2C751D4F00BE0918 /* Item.swift */; };
 		29A312A02C751D5000BE0918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A3129F2C751D5000BE0918 /* Assets.xcassets */; };
@@ -54,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		296A97512C77C8AF002744A4 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		296A97532C77C93A002744A4 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		29A312962C751D4F00BE0918 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A312992C751D4F00BE0918 /* PlacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesApp.swift; sourceTree = "<group>"; };
 		29A3129D2C751D4F00BE0918 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 				29A312EB2C75FF6D00BE0918 /* Helper */,
 				29A312E82C753D1C00BE0918 /* CustomViews */,
 				29A312992C751D4F00BE0918 /* PlacesApp.swift */,
+				296A97512C77C8AF002744A4 /* ViewModifiers.swift */,
 				29A3129D2C751D4F00BE0918 /* Item.swift */,
 				29A3129F2C751D5000BE0918 /* Assets.xcassets */,
 				29A312A12C751D5000BE0918 /* Places.entitlements */,
@@ -218,6 +223,7 @@
 				29A312D62C75241600BE0918 /* DictionaryExtension.swift */,
 				29A312D82C75243D00BE0918 /* EncodableExtension.swift */,
 				29A312E62C75363600BE0918 /* StringExtension.swift */,
+				296A97532C77C93A002744A4 /* ViewExtensions.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -396,10 +402,12 @@
 				29A312CB2C75215F00BE0918 /* NetworkManager.swift in Sources */,
 				29A312F22C760E0200BE0918 /* FormatHelper.swift in Sources */,
 				29A312E42C75318500BE0918 /* LocalizableStrings.swift in Sources */,
+				296A97522C77C8AF002744A4 /* ViewModifiers.swift in Sources */,
 				29A312C72C751DD400BE0918 /* LocationsView.swift in Sources */,
 				29A312D12C75226500BE0918 /* LocationsRequest.swift in Sources */,
 				29A312F42C760E1B00BE0918 /* DeeplinkHelper.swift in Sources */,
 				29A312E72C75363600BE0918 /* StringExtension.swift in Sources */,
+				296A97542C77C93A002744A4 /* ViewExtensions.swift in Sources */,
 				29A3129E2C751D4F00BE0918 /* Item.swift in Sources */,
 				29A312D42C7522CF00BE0918 /* Locations.swift in Sources */,
 				29A3129A2C751D4F00BE0918 /* PlacesApp.swift in Sources */,

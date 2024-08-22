@@ -18,12 +18,14 @@ struct LocationsView: View {
                 Button(location.name ?? LocalizableStrings.LocationTitles.noName) {
                     viewModel.redirectUrl(location: location)
                 }
+                .setAccessibility(label: "\(location.name ?? LocalizableStrings.LocationTitles.noName)", hint: LocalizableStrings.AccessibilityStrings.click, identifier: "btn_location")
                 .foregroundColor(.black)
             }
             .toolbar {
                 Button(LocalizableStrings.ButtonTitles.custom) {
                     showPopup = true
                 }
+                .setAccessibility(label: LocalizableStrings.ButtonTitles.custom, hint: LocalizableStrings.AccessibilityStrings.click, identifier: "btn_custom_location")
             }
             .popover(isPresented: $showPopup) {
                 PopupView()

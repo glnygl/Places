@@ -20,11 +20,13 @@ struct PopupView: View {
                 value: $lat, formatter: Formatters.locationFormatter
             ).textFieldStyle(.roundedBorder)
                 .keyboardType(.numbersAndPunctuation)
+                .setAccessibility(label: "lat.", hint: LocalizableStrings.AccessibilityStrings.type, identifier: "txt_lat")
             TextField(
                 "long.",
                 value: $long, formatter: Formatters.locationFormatter
             ).textFieldStyle(.roundedBorder)
                 .keyboardType(.numbersAndPunctuation)
+                .setAccessibility(label:  "long.", hint: LocalizableStrings.AccessibilityStrings.type, identifier: "txt_long")
             Button(action: {
                 if lat == 0.0 || long == 0.0  {
                     showAlert = true
@@ -34,6 +36,7 @@ struct PopupView: View {
             }, label: {
                 Text(LocalizableStrings.ButtonTitles.goToWiki)
             })
+            .setAccessibility(label: LocalizableStrings.ButtonTitles.goToWiki, hint: LocalizableStrings.AccessibilityStrings.click, identifier: "btn_wiki")
         })
         .alert(isPresented: $showAlert) {
             Alert(title: Text(LocalizableStrings.Error.error), message: Text(LocalizableStrings.Error.checkLocation), dismissButton: .cancel())

@@ -27,6 +27,10 @@ struct LocalizableStrings {
         static var checkLocation: String { "checkLocation".localize() }
     }
     
+    struct AccessibilityStrings {
+        static var click: String { "click".localize() }
+        static var type: String { "type".localize() }
+    }
 }
 
 

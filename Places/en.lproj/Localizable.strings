@@ -20,3 +20,8 @@
 "error" = "Error";
 "checkLocation" = "Check Location Values"; 
 
+// MARK: - Accessibility
+"click" = "Click";
+"type" = "Type Value";
+
+
