@@ -1,0 +1,18 @@
+/* 
+  Localizable.strings
+  Places
+
+  Created by Glny Gl on 20/08/2024.
+  
+*/
+
+// MARK: - Title
+"placesTitle" = "Places";
+
+// MARK: - Location Title
+"noName" = "No Name";
+
+// MARK: - Button Title
+"custom" = "Custom";
+"goToWiki" = "Go To Wiki";
+
