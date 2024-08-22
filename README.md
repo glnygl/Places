@@ -17,7 +17,7 @@
 ```
 Select places tab
 Pop navigation controllers,
-Dismis other controllers (like filter, share...)
+Dismis other controllers (in case user select filter, share then redirect)
 Set viewMode to map (in case select another viewMode)
 Cancel search (in case user typed a location text)
 Set new location
