@@ -5,6 +5,7 @@
 - Redirect to Wikipedia App when tab a location (or type a new custom location)
 - Localize hard coded strings
 - UnitTests
+- Accessibility
 
 # Wikipedia
 - Fetch redirectURl in SceneDelegate
