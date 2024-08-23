@@ -19,4 +19,8 @@ extension String {
               let bundle = Bundle(path: path) else { return value }
         return NSLocalizedString(self, bundle: bundle, comment: "")
     }
+    
+    func replaceComma() -> String {
+        self.replacingOccurrences(of: ",", with: ".")
+    }
 }

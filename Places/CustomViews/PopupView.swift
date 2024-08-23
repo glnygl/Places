@@ -27,7 +27,7 @@ struct PopupView: View {
                     showAlert = true
                     return
                 }
-                DeeplinkHelper().redirectUrl(location: Location(name: LocalizableStrings.ButtonTitles.custom, lat: Double(latString), long: Double(longString)))
+                DeeplinkHelper().redirectUrl(location: Location(name: LocalizableStrings.ButtonTitles.custom, lat: Double(latString.replaceComma()), long: Double(longString.replaceComma())))
             }, label: {
                 Text(LocalizableStrings.ButtonTitles.goToWiki)
             })
