@@ -17,7 +17,7 @@ struct DeeplinkHelper {
             print(CustomError.redirectFailed)
             return
         }
-        let wikipedia = URL(string: "wikipedia://glnygl\(queryString)")!
+        let wikipedia = URL(string: "wikipedia://places\(queryString)")!
         if UIApplication.shared.canOpenURL(wikipedia) {
             UIApplication.shared.open(wikipedia)
         }
