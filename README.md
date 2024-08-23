@@ -9,7 +9,11 @@
 # Wikipedia
 - Fetch redirectURl in SceneDelegate
 - Get queryItems from Url
-- Redirect location with showPlaces func
+- Redirect location with showPlaces func 
+
+⚠️ We need articleURL to redirect location 
+
+We can redirect a link work in openURL fuch with user activity. To process this activity we should have spesific articleURL for each location as wmf_linkURL. Since we dont have a articleURL in api data i code a workaround method called showPlaces. This func only if app status is in background or active. If app is terminated redirection doesn't work due to articleURL not exist.
 
 
  > In showPlaces func: 
@@ -22,8 +26,8 @@ Set viewMode to map (in case select another viewMode)
 Cancel search (in case user typed a location text)
 Set new location
 ```
+If mapView not loaded (user didn't select places tab yet, I checked mapView status in setLocation func set redirectLocation and then modified zoomAndPanMapView func according to new location
 
-> If mapView not loaded (user didn't select places tab yet, I used zoomAndPanMapView func to redirect 
 
 
 
