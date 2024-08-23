@@ -8,31 +8,26 @@
 import SwiftUI
 
 struct PopupView: View {
-    
-    @State var lat: Double = 0.0
-    @State var long: Double = 0.0    
+    @State var latString: String = ""
+    @State var longString:  String = ""
     @State private var showAlert = false
     
     var body: some View {
         VStack(alignment: .center, spacing: 20, content: {
-            TextField(
-                "lat.",
-                value: $lat, formatter: Formatters.locationFormatter
-            ).textFieldStyle(.roundedBorder)
+            TextField("lat.", text: $latString)
+                .textFieldStyle(.roundedBorder)
                 .keyboardType(.numbersAndPunctuation)
                 .setAccessibility(label: "lat.", hint: LocalizableStrings.AccessibilityStrings.type, identifier: "txt_lat")
-            TextField(
-                "long.",
-                value: $long, formatter: Formatters.locationFormatter
-            ).textFieldStyle(.roundedBorder)
+            TextField("long.", text: $longString)
+                .textFieldStyle(.roundedBorder)
                 .keyboardType(.numbersAndPunctuation)
                 .setAccessibility(label:  "long.", hint: LocalizableStrings.AccessibilityStrings.type, identifier: "txt_long")
             Button(action: {
-                if lat == 0.0 || long == 0.0  {
+                if latString.isEmpty || longString.isEmpty {
                     showAlert = true
                     return
                 }
-                DeeplinkHelper().redirectUrl(location: Location(name: LocalizableStrings.ButtonTitles.custom, lat: lat, long: long))
+                DeeplinkHelper().redirectUrl(location: Location(name: LocalizableStrings.ButtonTitles.custom, lat: Double(latString), long: Double(longString)))
             }, label: {
                 Text(LocalizableStrings.ButtonTitles.goToWiki)
             })

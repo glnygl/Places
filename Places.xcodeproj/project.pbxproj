@@ -27,10 +27,8 @@
 		29A312E42C75318500BE0918 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312E32C75318400BE0918 /* LocalizableStrings.swift */; };
 		29A312E72C75363600BE0918 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312E62C75363600BE0918 /* StringExtension.swift */; };
 		29A312EA2C753D3700BE0918 /* PopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312E92C753D3700BE0918 /* PopupView.swift */; };
-		29A312F22C760E0200BE0918 /* FormatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312F12C760E0200BE0918 /* FormatHelper.swift */; };
 		29A312F42C760E1B00BE0918 /* DeeplinkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312F32C760E1B00BE0918 /* DeeplinkHelper.swift */; };
 		29A313032C77580C00BE0918 /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A313022C77580C00BE0918 /* StringExtensionTests.swift */; };
-		29A313052C775ACF00BE0918 /* FormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A313042C775ACF00BE0918 /* FormatterTests.swift */; };
 		29A313072C775CFC00BE0918 /* DictionaryExtentionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A313062C775CFC00BE0918 /* DictionaryExtentionTests.swift */; };
 		29A3130C2C7761AD00BE0918 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3130B2C7761AD00BE0918 /* MockNetworkManager.swift */; };
 		29A313172C7762B700BE0918 /* LocationDummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 29A313152C7762B700BE0918 /* LocationDummy.json */; };
@@ -82,10 +80,8 @@
 		29A312E62C75363600BE0918 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		29A312E92C753D3700BE0918 /* PopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupView.swift; sourceTree = "<group>"; };
 		29A312F02C7605FD00BE0918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		29A312F12C760E0200BE0918 /* FormatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatHelper.swift; sourceTree = "<group>"; };
 		29A312F32C760E1B00BE0918 /* DeeplinkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeeplinkHelper.swift; sourceTree = "<group>"; };
 		29A313022C77580C00BE0918 /* StringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
-		29A313042C775ACF00BE0918 /* FormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatterTests.swift; sourceTree = "<group>"; };
 		29A313062C775CFC00BE0918 /* DictionaryExtentionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryExtentionTests.swift; sourceTree = "<group>"; };
 		29A3130B2C7761AD00BE0918 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		29A313162C7762B700BE0918 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/LocationDummy.json; sourceTree = "<group>"; };
@@ -172,7 +168,6 @@
 			children = (
 				29A3130D2C77621400BE0918 /* DummyData */,
 				29A3130A2C77619800BE0918 /* Mock */,
-				29A313042C775ACF00BE0918 /* FormatterTests.swift */,
 				29A313022C77580C00BE0918 /* StringExtensionTests.swift */,
 				29A313062C775CFC00BE0918 /* DictionaryExtentionTests.swift */,
 				29A313182C7762E900BE0918 /* LocationViewModelTests.swift */,
@@ -239,7 +234,6 @@
 		29A312EB2C75FF6D00BE0918 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
-				29A312F12C760E0200BE0918 /* FormatHelper.swift */,
 				29A312F32C760E1B00BE0918 /* DeeplinkHelper.swift */,
 			);
 			path = Helper;
@@ -400,7 +394,6 @@
 				29A312CF2C75221200BE0918 /* LocationsViewModel.swift in Sources */,
 				29A312D92C75243D00BE0918 /* EncodableExtension.swift in Sources */,
 				29A312CB2C75215F00BE0918 /* NetworkManager.swift in Sources */,
-				29A312F22C760E0200BE0918 /* FormatHelper.swift in Sources */,
 				29A312E42C75318500BE0918 /* LocalizableStrings.swift in Sources */,
 				296A97522C77C8AF002744A4 /* ViewModifiers.swift in Sources */,
 				29A312C72C751DD400BE0918 /* LocationsView.swift in Sources */,
@@ -421,7 +414,6 @@
 			files = (
 				29A313072C775CFC00BE0918 /* DictionaryExtentionTests.swift in Sources */,
 				29A3131B2C77647500BE0918 /* Mockable.swift in Sources */,
-				29A313052C775ACF00BE0918 /* FormatterTests.swift in Sources */,
 				29A3130C2C7761AD00BE0918 /* MockNetworkManager.swift in Sources */,
 				29A313032C77580C00BE0918 /* StringExtensionTests.swift in Sources */,
 				29A313192C7762E900BE0918 /* LocationViewModelTests.swift in Sources */,
