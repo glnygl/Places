@@ -16,6 +16,7 @@
 
 We can redirect a link work in openURL fuch with user activity. To process this activity we should have spesific articleURL for each location as wmf_linkURL. Since we dont have a articleURL in api data i code a workaround method called showPlaces. This func only if app status is in background or active. If app is terminated redirection doesn't work due to articleURL not exist.
 
+E.g. : WMFArticleURL=https://en.wikipedia.org/wiki/Union_Square,_San_Francisco?wprov=sfti1
 
  > In showPlaces func: 
 
