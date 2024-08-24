@@ -14,7 +14,7 @@
 
 ⚠️ We need articleURL (better way) to redirect location 
 
-We can redirect a link work in openURL func with user activity. To process this activity we should have spesific articleURL for each location as wmf_linkURL. Since we dont have a articleURL in api data i code a workaround method called showPlaces. This func only if app status is in background or active. If app is terminated PlacesViewController doesnt load propery that leads to crash.
+Normally, we can redirect a link with openURL func using user activity. To process this activity we should have spesific articleURL for each location as wmf_linkURL. Since we dont have a articleURL in api data i code a workaround method called showPlaces with locations. This func only if app status is in background or active. If app is terminated PlacesViewController doesnt initilize from storyboard properyly so that leads to crash.
 
 E.g. : WMFArticleURL=https://en.wikipedia.org/wiki/Union_Square,_San_Francisco?wprov=sfti1
 
