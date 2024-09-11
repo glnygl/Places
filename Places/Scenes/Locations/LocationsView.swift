@@ -9,7 +9,7 @@ import SwiftUI
 
 struct LocationsView: View {
     
-    @State var viewModel = LocationsViewModel()
+    @State var viewModel = LocationsViewModel(manager: NetworkManager())
     @State private var showPopup = false
     
     var body: some View {

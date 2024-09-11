@@ -13,7 +13,13 @@ final class LocationsViewModel: ObservableObject {
     
     var locations: [Location] = []
     
-    func fetchLocations(manager: NetworkService = NetworkManager()) async throws {
+    var manager: NetworkService
+    
+    init(manager: NetworkService) {
+        self.manager = manager
+    }
+    
+    func fetchLocations() async throws {
         let request = LocationsRequest()
         let locationsList = try await manager.performRequest(type: Locations.self, with: request.asURLRequest())
         locations = locationsList.locations ?? []
