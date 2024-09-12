@@ -9,8 +9,7 @@ import SwiftUI
 
 struct LocationsView: View {
     
-    @State var viewModel = LocationsViewModel(manager: NetworkManager())
-    @State private var showPopup = false
+    @State var viewModel = LocationsViewModel(manager: NetworkManager(), helper: DeeplinkHelper())
     
     var body: some View {
         NavigationStack {
@@ -23,11 +22,11 @@ struct LocationsView: View {
             }
             .toolbar {
                 Button(LocalizableStrings.ButtonTitles.custom) {
-                    showPopup = true
+                    viewModel.showPopop = true
                 }
                 .setAccessibility(label: LocalizableStrings.ButtonTitles.custom, hint: LocalizableStrings.AccessibilityStrings.click, identifier: "btn_custom_location")
             }
-            .popover(isPresented: $showPopup) {
+            .popover(isPresented: $viewModel.showPopop) {
                 PopupView()
             }
             .navigationTitle(LocalizableStrings.Titles.placesTitle)

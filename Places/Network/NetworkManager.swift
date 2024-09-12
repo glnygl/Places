@@ -7,21 +7,21 @@
 
 import Foundation
 
-protocol NetworkService {
+protocol NetworkServiceProtocol {
     var session: URLSession { get }
     func performRequest<T: Codable>(
           type: T.Type,
           with request: URLRequest) async throws -> T
 }
 
-extension NetworkService {
+extension NetworkServiceProtocol {
     var session: URLSession {
         URLSession.shared
     }
 }
 
 
-class NetworkManager: NetworkService {
+class NetworkManager: NetworkServiceProtocol {
     
     func performRequest<T>(type: T.Type, with request: URLRequest) async throws -> T where T : Decodable {
         let (data, response) = try await session.data(for: request)

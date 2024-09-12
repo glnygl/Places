@@ -13,10 +13,14 @@ final class LocationsViewModel: ObservableObject {
     
     var locations: [Location] = []
     
-    var manager: NetworkService
+    var manager: NetworkServiceProtocol
+    var helper: RedirectableProtocol
     
-    init(manager: NetworkService) {
+    var showPopop = false
+    
+    init(manager: NetworkServiceProtocol, helper: RedirectableProtocol) {
         self.manager = manager
+        self.helper = helper
     }
     
     func fetchLocations() async throws {
@@ -26,7 +30,7 @@ final class LocationsViewModel: ObservableObject {
     }
     
     func redirectUrl(location: Location) {
-        DeeplinkHelper().redirectUrl(location: location)
+        helper.redirectUrl(location: location)
     }
     
 }

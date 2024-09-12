@@ -7,7 +7,11 @@
 
 import UIKit
 
-struct DeeplinkHelper {
+protocol RedirectableProtocol {
+    func redirectUrl(location: Location)
+}
+
+class DeeplinkHelper: RedirectableProtocol {
     
     func redirectUrl(location: Location) {
         var queryString = ""

@@ -10,7 +10,6 @@
 		296A97522C77C8AF002744A4 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A97512C77C8AF002744A4 /* ViewModifiers.swift */; };
 		296A97542C77C93A002744A4 /* ViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296A97532C77C93A002744A4 /* ViewExtensions.swift */; };
 		29A3129A2C751D4F00BE0918 /* PlacesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312992C751D4F00BE0918 /* PlacesApp.swift */; };
-		29A3129E2C751D4F00BE0918 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3129D2C751D4F00BE0918 /* Item.swift */; };
 		29A312A02C751D5000BE0918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A3129F2C751D5000BE0918 /* Assets.xcassets */; };
 		29A312A42C751D5000BE0918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29A312A32C751D5000BE0918 /* Preview Assets.xcassets */; };
 		29A312B82C751D5000BE0918 /* PlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A312B72C751D5000BE0918 /* PlacesUITests.swift */; };
@@ -58,7 +57,6 @@
 		296A97532C77C93A002744A4 /* ViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtensions.swift; sourceTree = "<group>"; };
 		29A312962C751D4F00BE0918 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29A312992C751D4F00BE0918 /* PlacesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesApp.swift; sourceTree = "<group>"; };
-		29A3129D2C751D4F00BE0918 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		29A3129F2C751D5000BE0918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29A312A12C751D5000BE0918 /* Places.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Places.entitlements; sourceTree = "<group>"; };
 		29A312A32C751D5000BE0918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				29A312E82C753D1C00BE0918 /* CustomViews */,
 				29A312992C751D4F00BE0918 /* PlacesApp.swift */,
 				296A97512C77C8AF002744A4 /* ViewModifiers.swift */,
-				29A3129D2C751D4F00BE0918 /* Item.swift */,
 				29A3129F2C751D5000BE0918 /* Assets.xcassets */,
 				29A312A12C751D5000BE0918 /* Places.entitlements */,
 				29A312E02C75314F00BE0918 /* Localizable.strings */,
@@ -401,7 +398,6 @@
 				29A312F42C760E1B00BE0918 /* DeeplinkHelper.swift in Sources */,
 				29A312E72C75363600BE0918 /* StringExtension.swift in Sources */,
 				296A97542C77C93A002744A4 /* ViewExtensions.swift in Sources */,
-				29A3129E2C751D4F00BE0918 /* Item.swift in Sources */,
 				29A312D42C7522CF00BE0918 /* Locations.swift in Sources */,
 				29A3129A2C751D4F00BE0918 /* PlacesApp.swift in Sources */,
 				29A312EA2C753D3700BE0918 /* PopupView.swift in Sources */,
