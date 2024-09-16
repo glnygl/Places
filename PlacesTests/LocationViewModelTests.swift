@@ -11,12 +11,14 @@ import XCTest
 final class LocationViewModelTests: XCTestCase {
     
     var mockNetworkManager: MockNetworkManager!
+    var helper: DeeplinkHelper!
     var locationViewModel: LocationsViewModel!
 
     override func setUp() {
         super.setUp()
         mockNetworkManager = MockNetworkManager()
-        locationViewModel = LocationsViewModel()
+        helper = DeeplinkHelper()
+        locationViewModel = LocationsViewModel(manager: mockNetworkManager, helper: helper)
     }
     
     override func tearDown() {
@@ -28,7 +30,7 @@ final class LocationViewModelTests: XCTestCase {
     
     func test_fetchLocations_Successfully() async throws {
         
-        try await locationViewModel.fetchLocations(manager: mockNetworkManager)
+        try await locationViewModel.fetchLocations()
         
         XCTAssertTrue(locationViewModel.locations.count > 0)
         
@@ -39,7 +41,7 @@ final class LocationViewModelTests: XCTestCase {
         mockNetworkManager.shouldThrowError = true
         
         do {
-            try await locationViewModel.fetchLocations(manager: mockNetworkManager)
+            try await locationViewModel.fetchLocations()
             XCTFail("Expected fetchLocations to throw an error, but it succeeded.")
         } catch {
             XCTAssertEqual(locationViewModel.locations.count, 0)

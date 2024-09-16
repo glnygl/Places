@@ -8,7 +8,7 @@
 import Foundation
 @testable import Places
 
-class MockNetworkManager: NetworkService, Mockable {
+class MockNetworkManager: NetworkServiceProtocol, Mockable {
     var shouldThrowError = false
     var mockLocations: Locations?
     
