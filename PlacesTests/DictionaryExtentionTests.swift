@@ -24,10 +24,16 @@ final class DictionaryExtentionTests: XCTestCase {
         XCTAssertEqual(result, "")
     }
     
-    func test_queryString_dictionaryNotEmpty() {
+    func test_queryString_dictionarySingleValue() {
         let dictionary: [String: String] = ["name":"gg"]
         let result = dictionary.queryString()
         XCTAssertEqual(result, "?name=gg")
+    }
+    
+    func test_queryString_dictionaryMultipleValue() {
+        let dictionary: [String: String] = ["first":"glny", "second":"gl"]
+        let result = dictionary.queryString()
+        XCTAssertTrue(result == "?first=glny&second=gl" || result == "?second=gl&first=glny")
     }
 
 }
