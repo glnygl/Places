@@ -22,9 +22,9 @@ final class LocationViewModelTests: XCTestCase {
     }
     
     override func tearDown() {
-        super.tearDown()
         mockNetworkManager = nil
         locationViewModel = nil
+        super.tearDown()
     }
     
     
