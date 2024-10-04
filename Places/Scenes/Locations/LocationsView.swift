@@ -18,7 +18,7 @@ struct LocationsView: View {
                     viewModel.redirectUrl(location: location)
                 }
                 .setAccessibility(label: "\(location.name ?? LocalizableStrings.LocationTitles.noName)", hint: LocalizableStrings.AccessibilityStrings.click, identifier: "btn_location")
-                .foregroundColor(.black)
+                .foregroundStyle(.black)
             }
             .toolbar {
                 Button(LocalizableStrings.ButtonTitles.custom) {
